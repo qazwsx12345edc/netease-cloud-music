@@ -1,13 +1,10 @@
+<script setup>
+
+</script>
+
 <template>
 
 </template>
-
-<script>
-export default {
-  components: {},
-  setup() {},
-};
-</script>
 
 <style>
 #app {
