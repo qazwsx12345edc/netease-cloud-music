@@ -1,18 +1,34 @@
-<script setup>
-
-</script>
-
 <template>
-
+  <router-view />
 </template>
 
+<script>
+export default {
+  setup() {
+    const winW = document.documentElement.clientWidth;
+    const winH = document.documentElement.clientHeight;
+    console.log(app.style.width = winW + "px")
+    console.log(app.style.height = winH + "px")
+  },
+};
+</script>
+
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgb(235, 235, 235);
+}
+
+#app::-webkit-scrollbar {
+  display: none;
 }
 </style>

@@ -1,0 +1,49 @@
+.flex-and-center {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+.discovery-menu {
+  transition: all 0.2s;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  z-index: 2;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.discovery-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-show {
+  width: 70%;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+}
+
+.menu-unshow {
+  width: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.menu__content {
+  height: 100%;
+
+  &__header {
+    height: 3%;
+    @extend .flex-and-center;
+    img {
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .van-cell-group{
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
