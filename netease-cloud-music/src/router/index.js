@@ -1,6 +1,8 @@
-import Discovery from '../pages/discovery.vue'
+import Discovery from '../pages/main/discovery.vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import Search from '../pages/search-page.vue'
+import Search from '../pages/search/search-page.vue'
+import SearchResults from '../pages/search/search-results.vue'
+
 const routes = [
   {
     path: '/',
@@ -14,7 +16,13 @@ const routes = [
   },
   {
     path: '/search',
+    name: 'search',
     component: Search
+  },
+  {
+    path: '/search/results',
+    name: 'search-results',
+    component: SearchResults
   }
 ]
 

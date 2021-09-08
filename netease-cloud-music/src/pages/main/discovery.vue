@@ -59,8 +59,8 @@
 import { ref } from "vue";
 import {useRouter} from 'vue-router'
 
-import PlayTimes from "../components/play-times.vue";
-import DiscoveryMenu from "../components/discovery-menu.vue";
+import PlayTimes from "../../components/play-times.vue";
+import DiscoveryMenu from "../../components/discovery-menu.vue";
 export default {
   components: {
     PlayTimes,
@@ -115,5 +115,5 @@ export default {
 };
 </script>
 
-<style lang="scss" src="..\assets\css\discovery.scss">
+<style lang="scss" src="..\..\assets\css\discovery.scss">
 </style>
