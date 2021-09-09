@@ -6,6 +6,7 @@
     @keydown.enter="search"
   />
   <div class="search__content">
+    <div style="height:7%"></div>
     <div class="search__content__hot">
       <div class="hot-title">热搜榜</div>
       <div
@@ -64,7 +65,7 @@ export default {
     };
 
     const search = () => {
-      router.push({name: "search-results", params: {keywords: searchValue.value}})
+      router.push({name: "search-results", query: {keywords: searchValue.value}})
     };
 
     return {

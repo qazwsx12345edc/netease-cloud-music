@@ -18,7 +18,7 @@ const axios = ({
 }) => {
   method = method.toLowerCase(); //统一为小写
   if (method == 'post') {
-    const token = "3cf1c4cda290a10b9c2b5e25829740ccea6dfeee39b8af9a7bd20912d17caee19cb4377b2d7ba249"
+    // const token = "3cf1c4cda290a10b9c2b5e25829740ccea6dfeee39b8af9a7bd20912d17caee19cb4377b2d7ba249"
     // config.headers.Authorization = 'Bearer ' + token
     return axiosInstance.post(path, data, { ...config })
   } else if (method == 'get') {

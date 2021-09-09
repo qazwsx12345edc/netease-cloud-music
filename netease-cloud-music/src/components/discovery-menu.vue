@@ -51,7 +51,9 @@ export default {
         if (props.isShow === true) {
           GET({
             path: "/user/account",
-            data: null,
+            data: {
+              timestamp: Date.now()
+            },
           }).then((res) => {
             if (res.code === 200) {
               userInfo.value = res.profile;

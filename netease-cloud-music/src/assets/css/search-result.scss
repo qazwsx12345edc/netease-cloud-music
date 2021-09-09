@@ -1,0 +1,9 @@
+.search-result{
+  height: 100%;
+  overflow: scroll;
+  background-color: #fff;
+}
+
+.search-result::-webkit-scrollbar{
+  display: none;
+}

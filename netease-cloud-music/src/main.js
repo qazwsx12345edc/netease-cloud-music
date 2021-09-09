@@ -2,11 +2,13 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index'
 import "./http/requests"
+import store from "./store/index"
+
 import { Field, Icon, Swipe, SwipeItem, Cell, CellGroup, Switch, Search } from 'vant';
 
 const app = createApp(App)
 app.use(router)
-
+app.use(store)
 
 app.use(Field)
 app.use(Icon)

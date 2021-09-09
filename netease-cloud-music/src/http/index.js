@@ -6,6 +6,7 @@ var axiosInstance = axios.create({
   timeout: 5000,
   headers: {
     'ContentType': 'application/json;charset=UTF-8;',
+    'withCredentials': 'true'
   }
 })
 
@@ -23,10 +24,8 @@ axiosInstance.interceptors.request.use((config) => {
 
 // 响应拦截器
 axiosInstance.interceptors.response.use(response => {
-  //响应成功
   return response.data;
 }, error => {
-  //响应错误
   return Promise.reject(error);
 });
 
